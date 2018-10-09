@@ -109,15 +109,7 @@ public class SinglyLinkedList<V> {
         if (first == null) {
             return true;
         }
-        Node<V> n = first.next;
-        if (n == null) {
-            first.value = null; // help gc
-            first = null;
-        } else {
-            first.value = null;
-            first.next = null;
-            first = n;
-        }
+        first = first.next;
         size--;
         return true;
     }
@@ -126,21 +118,46 @@ public class SinglyLinkedList<V> {
         if (last == null) {
             return true;
         }
-        Node<V> n = first.next;
-        while (n != null) {
-
-
+        if (first == last) {
+            first = null;
+            last = null;
+            size--;
+            return true;
+        }
+        int pos = 1;
+        Node<V> n = first;
+        while (pos != (size - 1)) { // 查找到倒数第二个节点
+            pos++;
             n = n.next;
         }
-
+        n.next = null;
+        last = n;
+        size--;
         return true;
     }
 
-    public V remove(int index) {
-        return null;
-    }
-
-    public boolean remove(Object o) {
+    public boolean remove(int index) {
+        if (index < 0 || index > size) {
+            return false;
+        }
+        if (index == size) { // 末尾删除
+            return removeLast();
+        }
+        if (index == 0) { // 表头删除
+            return removeFirst();
+        }
+        // 表间删除
+        int pos = 1;
+        Node<V> pre = first;
+        Node<V> removeNode = first.next;
+        while (pos != index) { // 找到移除节点
+            pre = pre.next;
+            removeNode = removeNode.next;
+            ++pos;
+        }
+        pre.next = removeNode.next;
+        removeNode.value = null;
+        size--;
         return true;
     }
 
@@ -155,14 +172,13 @@ public class SinglyLinkedList<V> {
         list.addLast(3);
         list.addLast(4);
         list.addLast(5);
-        list.addLast(6);
-        list.addLast(7);
 
-        list.add(8, 7);
+//        list.removeFirst();
+//        list.removeLast();
+        list.remove(1);
 
         int i = list.get(4);
 
-        return;
     }
 }
 
