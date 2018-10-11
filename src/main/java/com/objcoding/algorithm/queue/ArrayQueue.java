@@ -57,8 +57,6 @@ public class ArrayQueue {
     public static void main(String[] args) {
         ArrayQueue arrayQueue = new ArrayQueue(5);
 
-        System.out.println(2%8);
-
         arrayQueue.enqueue(0);
         arrayQueue.enqueue(1);
         arrayQueue.enqueue(2);
