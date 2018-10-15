@@ -1,4 +1,4 @@
-package com.objcoding.algorithm.hashtable;
+package com.objcoding.algorithm.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;

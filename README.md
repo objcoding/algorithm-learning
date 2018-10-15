@@ -11,7 +11,7 @@
 ## Hash Table
 |  #  |Title|  Time  | Difficulty| Note|
 |-----|----  | ---------------| ------- | ---- |
-1 | [两数之和](https://github.com/objcoding/algorithm-learning/blob/master/src/main/java/com/objcoding/algorithm/hashtable/TwoSum.java) | _O(n)_  | Easy | |
+1 | [两数之和](https://github.com/objcoding/algorithm-learning/blob/master/src/main/java/com/objcoding/algorithm/leetcode/TwoSum.java) | _O(n)_  | Easy | |
 
 
 ## Array
@@ -29,4 +29,4 @@
 ## Linked
 |  #  |Title|  Time  | Difficulty| Note |
 |-----|----  | ---------------| ------- | ----- |
-2 | [两数相加](https://github.com/objcoding/algorithm-learning/blob/master/src/main/java/com/objcoding/algorithm/linked/AddTwoNumbers.java) | _O(n)_  | Medium | |
+2 | [两数相加](https://github.com/objcoding/algorithm-learning/blob/master/src/main/java/com/objcoding/algorithm/leetcode/AddTwoNumbers.java) | _O(n)_  | Medium | |

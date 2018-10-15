@@ -1,4 +1,4 @@
-package com.objcoding.algorithm.linked;
+package com.objcoding.algorithm.leetcode;
 
 
 /**
