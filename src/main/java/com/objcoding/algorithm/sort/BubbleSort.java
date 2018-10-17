@@ -11,6 +11,7 @@ public class BubbleSort {
 
     /**
      * 时间复杂度：O(n^2)
+     * 空间复杂度：O(1)
      * 稳定排序算法
      */
     public void bubbleSort(int[] array, int n) {
