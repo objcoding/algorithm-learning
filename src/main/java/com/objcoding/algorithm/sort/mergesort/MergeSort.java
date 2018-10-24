@@ -1,4 +1,4 @@
-package com.objcoding.algorithm.sort;
+package com.objcoding.algorithm.sort.mergesort;
 
 /**
  * 归并排序

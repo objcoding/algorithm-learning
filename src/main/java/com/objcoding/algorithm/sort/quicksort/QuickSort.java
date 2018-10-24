@@ -1,4 +1,4 @@
-package com.objcoding.algorithm.sort;
+package com.objcoding.algorithm.sort.quicksort;
 
 /**
  * 快速排序

@@ -1,4 +1,4 @@
-package com.objcoding.algorithm.sort;
+package com.objcoding.algorithm.sort.selectionsort;
 
 /**
  * 选择排序
